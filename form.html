@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Learning HTML</title>
+</head>
+<body>
+
+	<!-- HEADERS -->
+	<h1>Learning HTML</h1>
+	<h2>Headers, Paragraphs, Tables, Images, Videos and Forms</h2>
+	<h3>Section 1: Text</h3>
+
+	<!-- PARAGRAPHS -->
+	<p>HTML stands for HyperText Markup Language. It is used to build the structure of web pages.</p>
+	<p>We are learning HTML for web development. <br>
+	Today we introduce a new tag: the <b>form</b> tag.</p>
+
+	<hr>
+
+	<!-- IMAGE -->
+	<h3>Section 2: Image</h3>
+	<img src="images/hellcat-charger.jpg" alt="Dodge Charger Hellcat" height="400" width="400">
+
+	<hr>
+
+	<!-- VIDEO -->
+	<h3>Section 3: Video</h3>
+	<video height="400" width="600" controls>
+		<source src="videos/Alan-walker.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+	<hr>
+
+	<!-- TABLE -->
+	<h3>Section 4: Table</h3>
+	<table border="1" width="400">
+		<caption>Students</caption>
+		<thead>
+			<tr>
+				<th>Names</th>
+				<th>Age</th>
+				<th>Gender</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Ange</td>
+				<td>15</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<td>Aline</td>
+				<td>20</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<td>Eric</td>
+				<td>18</td>
+				<td>M</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+	<!-- FORM -->
+	<h3>Section 5: Form</h3>
+	<p>A form collects information from the user. Fill in the form below to register.</p>
+
+	<form action="#" method="post">
+
+		<label for="fullname">Full name:</label><br>
+		<input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"><br><br>
+
+		<label for="age">Age:</label><br>
+		<input type="number" id="age" name="age" min="1" max="100"><br><br>
+
+		<label for="birthday">Date of birth:</label><br>
+		<input type="date" id="birthday" name="birthday"><br><br>
+
+		<p>Gender:</p>
+		<input type="radio" id="male" name="gender" value="M">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="F">
+		<label for="female">Female</label><br><br>
+
+		<p>Courses you like:</p>
+		<input type="checkbox" id="html" name="courses" value="html">
+		<label for="html">HTML</label><br>
+		<input type="checkbox" id="css" name="courses" value="css">
+		<label for="css">CSS</label><br>
+		<input type="checkbox" id="js" name="courses" value="js">
+		<label for="js">JavaScript</label><br><br>
+
+		<label for="country">Country:</label><br>
+		<select id="country" name="country">
+			<option value="rw">Rwanda</option>
+			<option value="ug">Uganda</option>
+			<option value="ke">Kenya</option>
+			<option value="tz">Tanzania</option>
+		</select><br><br>
+
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message" rows="5" cols="40" placeholder="Write something..."></textarea><br><br>
+
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+
+	</form>
+
+</body>
+</html>
